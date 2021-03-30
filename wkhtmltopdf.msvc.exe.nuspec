@@ -14,7 +14,7 @@
 This only includes wkhtmltopdf.exe and not wkhtmltoimage.exe.
 
 Use for Windows Vista + (see http://wkhtmltopdf.org/downloads.html for details)</description>
-        <summary>The nuget is released from https://github.com/docascode/packaging and pushed to https://pkgs.dev.azure.com/ceapex/_packaging/OpenPublishingService/nuget/v3/index.json.</summary>
+        <summary>This package is released from https://github.com/docascode/packaging and pushed to https://pkgs.dev.azure.com/ceapex/_packaging/OpenPublishingService/nuget/v3/index.json.</summary>
     </metadata>
     <files>
         <file src="install.ps1" target="tools/install.ps1" />
