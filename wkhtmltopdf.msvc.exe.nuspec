@@ -14,7 +14,7 @@
 This only includes wkhtmltopdf.exe and not wkhtmltoimage.exe.
 
 Use for Windows Vista + (see http://wkhtmltopdf.org/downloads.html for details)</description>
-        <summary>fix some bugs in wkhtmltopdf.</summary>
+        <summary>release wkhtmltopdf to OpenPublishingService artifacts.</summary>
     </metadata>
     <files>
         <file src="install.ps1" target="tools/install.ps1" />

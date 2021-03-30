@@ -1,5 +1,7 @@
 # variables used in the build
 variables:
+  checkout: 'master'
+  releaseVersion: '1.0.0'
   iteration: '1'
 
 # package builds will always be manually triggered
@@ -27,7 +29,6 @@ jobs:
   - script: python build vagrant $(target) --version - - --iteration $(iteration) wkhtmltopdf
     displayName: 'build package'
   - task: PublishBuildArtifacts@1
-    condition: and(succeeded(), ne(variables['Build.Reason'],'PullRequest'))
     displayName: Upload Build Artifacts
     inputs:
       PathtoPublish: '$(System.DefaultWorkingDirectory)/targets/wkhtmltox/bin/wkhtmltopdf.exe'
@@ -51,5 +52,5 @@ jobs:
     inputs:
       command: push
       packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
-      publishVstsFeed: '32d1fdf2-56bc-43a3-b791-1f00f9d3ead8'
+      publishVstsFeed: '32d1fdf2-56bc-43a3-b791-1f00f9d3ead8' #https://pkgs.dev.azure.com/ceapex/_packaging/OpenPublishingService
       allowPackageConflicts: true
