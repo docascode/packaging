@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>wkhtmltopdf.msvc.exe</id>
+        <version>1.0.0</version>
+        <title>wkhtmltopdf MSVC x64 exe</title>
+        <authors>docascode</authors>
+        <owners>docascode</owners>
+        <projectUrl>https://github.com/wkhtmltopdf/wkhtmltopdf</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <developmentDependency>true</developmentDependency>
+        <description>A convenience package for using wkhtmltopdf.exe in a .NET project.
+
+This only includes wkhtmltopdf.exe and not wkhtmltoimage.exe.
+
+Use for Windows Vista + (see http://wkhtmltopdf.org/downloads.html for details)</description>
+        <summary>This package is released from https://github.com/docascode/packaging and pushed to https://pkgs.dev.azure.com/ceapex/_packaging/OpenPublishingService/nuget/v3/index.json.</summary>
+    </metadata>
+    <files>
+        <file src="install.ps1" target="tools/install.ps1" />
+        <file src="targets/wkhtmltox/bin/wkhtmltopdf.exe" target="tools/wkhtmltopdf.exe" />
+    </files>
+</package>
