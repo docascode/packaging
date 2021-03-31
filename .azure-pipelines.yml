@@ -53,4 +53,4 @@ jobs:
       command: push
       packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
       publishVstsFeed: '32d1fdf2-56bc-43a3-b791-1f00f9d3ead8' #https://pkgs.dev.azure.com/ceapex/_packaging/OpenPublishingService
-      allowPackageConflicts: true
+      allowPackageConflicts: false
