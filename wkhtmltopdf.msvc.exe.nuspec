@@ -9,6 +9,7 @@
         <projectUrl>https://github.com/wkhtmltopdf/wkhtmltopdf</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <developmentDependency>true</developmentDependency>
+        <license type="file">https://raw.githubusercontent.com/wkhtmltopdf/wkhtmltopdf/master/LICENSE</license>
         <description>A convenience package for using wkhtmltopdf.exe in a .NET project.
 
 This only includes wkhtmltopdf.exe and not wkhtmltoimage.exe.
